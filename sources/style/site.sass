@@ -1,0 +1,139 @@
+$blue: #0077b3
+$blue-black: #004265
+$red: #e52e2e
+$grey-black: #333
+$grey: #666
+$grey-withe: #eee
+$gradient: #ff9237
+
+
+html
+  background-color: #fafafa
+
+h1, h2, h3, h4
+  font-family: 'Montserrat', sans-serif
+  font-weight: 500
+h1
+  font-size: 30px
+
+//Стили меню
+.header
+  ul
+    list-style: none
+    margin: 0
+    display: flex
+    align-items: center
+    padding: 10px 0
+  li
+    a
+      font-size: 16px
+      line-height: 40px
+      display: inline-block
+      padding: 0 10px
+      text-decoration: none
+      color: $grey
+      transition: all 0.3s
+      &:hover
+        color: $blue-black
+    a.index-link
+      text-transform: uppercase
+      font-size: 18px
+      font-weight: bold
+      color: $blue
+      &:hover
+        color: $blue
+    a.active-item
+      padding: 0 15px
+      color: #fff
+      background: $red
+      border: 1px solid $red
+      transition: 0.3s
+      &:hover
+        background: #fff
+        color: $red
+    img
+      height: 40px
+      width: auto
+
+//Корзина товара
+.shopping-wrapper
+  h1
+    margin: 35px 0 0 0
+  h5
+    margin: 0 0 10px
+    font-size: 18px
+    color: $grey
+  .uk-grid
+    background-color: #fff
+    border: 1px solid $grey-withe
+    padding: 0 25px
+    &>*
+      padding: 0
+  .list-shopping
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 15px 0
+      margin: 15px 0
+      border-bottom: 1px solid $grey-withe
+    li:last-child
+      border: none
+    .delete-shop
+      width: 60px
+      text-align: center
+      cursor: pointer
+      transform-origin: center
+      transition: all 0.3s
+      &:hover
+        transform: rotate(90deg)
+        color: $red
+    .price-shop
+      width: 120px
+      text-align: center
+      font-size: 20px
+      font-family: 'Montserrat', sans-serif
+      font-weight: 500
+      color: $grey-black
+    .count-shop
+      width: 120px
+      input
+        background-color:
+        padding: 8px 3px
+        width: 30px
+        text-align: center
+        border: 1px solid $grey-withe
+      span
+        padding: 0 8px
+        cursor: pointer
+        color: $grey-black
+        &:hover
+          color: $blue
+    .number-shop
+      width: 60px
+      text-align: center
+      font-family: 'Montserrat', sans-serif
+      font-size: 18px
+      color: $blue
+    .name-shop
+      width: calc(100% - 360px)
+      .item-name
+        color: $grey-black
+        font-family: 'Montserrat', sans-serif
+        font-weight: 700
+  .total
+    position: relative
+  .total-wrapper
+    position: absolute
+    left: 0
+    right: -30px
+    top: -30px
+    bottom: -30px
+    background: $blue 0%
+
+
+
